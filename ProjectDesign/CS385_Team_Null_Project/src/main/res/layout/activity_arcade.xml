@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.cs385.teamnull.projectdesign.arcade">
+
+
+    <TextView
+        android:id="@+id/enterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="serif-monospace"
+        android:text="ARCADE"
+        android:textColor="@color/colorGreen"
+        android:textSize="28sp"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline26" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/lock_button"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="serif-monospace"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="laserGame"
+        android:shadowRadius="0"
+        android:text="Lasers"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="252dp"
+        android:layout_height="58dp"
+        android:background="@drawable/lock_button"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="serif-monospace"
+        android:onClick="catchGame"
+        android:text="Catch"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/guideline30" />
+
+    <Button
+        android:id="@+id/tictactoebutton"
+        android:layout_width="252dp"
+        android:layout_height="58dp"
+        android:background="@drawable/lock_button"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="serif-monospace"
+        android:onClick="ticTacToeGame"
+        android:text="Tic Tac Toe"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/guideline100" />
+
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="252dp"
+        android:layout_height="55dp"
+        android:background="@drawable/lock_button"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="serif-monospace"
+        android:onClick="snakeGame"
+        android:text="Snake"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+
+    <Button
+        android:id="@+id/binaryButton"
+        android:layout_width="252dp"
+        android:layout_height="62dp"
+        android:background="@drawable/lock_button"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="serif-monospace"
+        android:onClick="binaryGame"
+        android:text="Binary Lock"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/guideline40" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+</android.support.constraint.ConstraintLayout>
